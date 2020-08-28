@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DID Resolver</title>
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>DID Resolver</h1>
+
+  <form id="mainForm">
+    <p>
+      Enter your DID in format <code>"did:web:{uniquestring}"</code> and press "Submit".
+    </p>
+    <label for="txtInput">Enter your DID:</label>
+    <input id="txtInput" class="text text--long" type="text" name="did" pattern="did:(\w)+:.+" />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <code id="output" class="formatted formatted--pre"></code>
+
+  <script src="bundle.js"></script>
+</body>
+
+</html>
